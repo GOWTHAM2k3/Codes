@@ -1,0 +1,14 @@
+class sv2
+{
+static String name="sheela";
+public static void main(String[] args)
+{
+m1();
+System.out.println(name);
+}
+public static void m1()
+{
+System.out.println(name);
+name="laila";
+}
+}
