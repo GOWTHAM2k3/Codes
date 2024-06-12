@@ -1,0 +1,25 @@
+class Method 
+{
+    void add() 
+    {
+        System.out.println("no values");
+    }
+    void add(int a, int b) 
+    {
+        System.out.println(a+b);
+    }
+    void add(double a, double b) 
+    {
+         System.out.println(a+b);
+    }
+}
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        Method m1 = new Method();
+        m1.add();
+        m1.add(2, 3);
+        m1.add(2.5, 3.5);
+    }
+}
