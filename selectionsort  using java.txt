@@ -1,0 +1,43 @@
+public class selectionsort 
+{
+    public static void main(String[] args) 
+    {
+        int nums[] = {6, 5, 2, 8, 9, 4};
+        int temp;
+        int minindex = 0;
+
+        System.out.println("Before sorting:");
+        for (int i = 0; i < nums.length; i++) 
+        {
+            System.out.print(nums[i] + "  ");
+        }
+        System.out.println();
+        
+        for (int i = 0; i < nums.length - 1; i++)
+        {
+            minindex = i;
+            for (int j = i + 1; j < nums.length; j++)
+            {
+                if (nums[minindex] > nums[j])
+                {
+                    minindex = j;
+                }
+            }
+            temp = nums[minindex];
+            nums[minindex] = nums[i];
+            nums[i] = temp;
+            
+            for (int k = 0; k < nums.length; k++)
+            {
+                System.out.print(nums[k] + "  ");
+            }
+            System.out.println();
+        }
+        
+        System.out.println("After sorting:");
+        for (int i = 0; i < nums.length; i++)
+        {
+            System.out.print(nums[i] + "  ");
+        }
+    }
+}
